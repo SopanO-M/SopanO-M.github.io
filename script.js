@@ -1,32 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".slide");
     let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
 
     function showSlides() {
         for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            slides[i].querySelector(".text-overlay").style.opacity = 0; // Hide text overlays initially
+            slides[i].classList.remove("active"); // Hide all slides
         }
         slideIndex++;
         if (slideIndex > slides.length) {
-            slideIndex = 1;
+            slideIndex = 1; // Reset slide index to 1 when end reached
         }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(() => {
-            slides[slideIndex - 1].querySelector(".text-overlay").style.opacity = 1; // Show text overlay with fade-in effect
-        }, 100); // Add a slight delay to ensure the slide is displayed before the text appears
-        setTimeout(showSlides, 4000); // Change image every 4 seconds
+        slides[slideIndex - 1].classList.add("active"); // Show current slide
+        setTimeout(showSlides, 4000); // Change image every 3 seconds
     }
 
-    // Add event listeners to buttons for redirection
-    document.getElementById('simpleButton').addEventListener('click', function() {
-        window.location.href = 'https://drive.google.com/file/d/13Qvw0DxFoyZql5bHZgHTAIc7rueoKN2_/view?usp=drive_link';
-    });
-    
     document.getElementById('rightButton').addEventListener('click', function() {
         window.location.href = 'https://drive.google.com/file/d/13Qvw0DxFoyZql5bHZgHTAIc7rueoKN2_/view?usp=drive_link';
-    });
+    });    
 
-    // Start the slider animation immediately
-    showSlides(); 
+    showSlides(); // Initial call to start slideshow
 });
