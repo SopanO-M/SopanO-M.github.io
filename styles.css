@@ -19,33 +19,6 @@ ul {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
-#simpleButton {
-    position: absolute;
-    top: 300px; /* Center vertically */
-    left: 20px;
-    transform: translateY(-50%);
-    padding: 10px 20px;
-    background-color: #008080;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    z-index: 10;
-    white-space: normal; /* Allow text to wrap */
-    word-break: break-all; /* Break text at any character */
-    width: auto; /* Adjust width automatically */
-    max-width: 175px; /* Set a maximum width */
-    text-align: center; /* Center-align text */
-}
-
-#simpleButton:hover {
-    background-color: #004d4d;
-}
-
 #rightButton {
     position: absolute;
     top: 300px; /* Center vertically */
