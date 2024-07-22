@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add event listeners to buttons for redirection
     document.getElementById('simpleButton').addEventListener('click', function() {
-        window.location.href = 'https://drive.google.com/file/d/13TVe6_PeAjjCftrf0_fteITsGTChHEqM/view?usp=drive_link';
+        window.location.href = 'https://drive.google.com/file/d/13Qvw0DxFoyZql5bHZgHTAIc7rueoKN2_/view?usp=drive_link';
     });
     
     document.getElementById('rightButton').addEventListener('click', function() {
