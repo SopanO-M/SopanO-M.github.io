@@ -48,7 +48,7 @@ ul {
 ul li {
     position: relative;
     border-right: 1px solid #ffffff;
-    width: 150px; /* Fixed width for each navigation item */
+    width: 200px; /* Fixed width for each navigation item */
     text-align: center; /* Center align text */
 }
 
