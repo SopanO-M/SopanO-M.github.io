@@ -125,6 +125,86 @@ ul li ul.dropdown li a:hover {
     background-color: #156ee2; /* Background color on hover */
 }
 
+
+/* Styles for the login container */
+.login-container {
+    display: none; /* Hide login container by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 60px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+.login-container.active {
+    display: block; /* Show login container when active */
+}
+
+.homepage-content {
+    display: none; /* Hide homepage content by default */
+}
+
+.homepage-content.active {
+    display: block; /* Show homepage content when active */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* White color for the heading */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 40px); /* Adjust input field width to fit inside the container */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff; /* White background for input fields */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.login-container button {
+    width: calc(100% - 40px); /* Adjust button width to fit inside the container */
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4ec915, #4ec915); /* Gradient background for the button */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(255, 126, 95, 0.3); /* Shadow for button */
+    transition:background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container button:hover {
+    background: linear-gradient(135deg, #ebe709, #ebe709); /* Reverse gradient on hover */
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: transparent; /* Remove default border color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Glow effect on focus */
+}
+
+.error-message {
+    color: #ffffff; /* Vibrant red color for error messages */
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 .slider {
     position: relative;
     max-width: 100%;
